@@ -1,0 +1,158 @@
+body{background-color: black;
+     color: white;
+     font-family: "Montserrat";
+     text-align: center;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#fuck{background-color: rgb(0, 0, 0);
+     color: white;
+     display: flex;
+     justify-content: center;
+     font-family: "Montserrat";
+     font-weight: 700;}
+
+#imgr{width: 80px;
+      height: 80px;
+      margin-top: 22px;
+      margin-right: 40px;
+      margin-left: 40px;
+      align-self: center;
+      float: left;}
+
+#site{font-size: 16px;
+      font-family: "Montserrat";
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 25px;
+      animation-name: dis;
+      animation-duration: 7s;
+      animation-timing-function: cubic-bezier(0.9, 0, 1, 0.1);}
+
+#siter{font-size: 16px;
+       font-family: "Montserrat";
+       font-weight: 700;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       min-height: 25px;
+       width: 100%;}
+
+#site h2{color: white;
+         margin-left: 20px;
+         margin-right: 20px;}
+#site a{text-decoration: none;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;}
+
+#siter h2{color: white;
+         margin-left: 20px;
+         margin-right: 20px;}
+#siter a{text-decoration: none;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;}
+
+#corupt{border: 2px solid;}
+
+#img{width: 80px;
+     height: 80px;
+     margin-top: 22px;
+     margin-right: 40px;
+     margin-left: 40px;
+     align-self: center;
+     float: left;
+     animation: imgpop 7s linear forwards;}
+
+.mhr{animation-name: dis;
+   animation-duration: 7s;
+   animation-timing-function: cubic-bezier(0.9, 0, 1, 0.1);}
+
+header{border: 2px solid black;
+       width: 480px;
+       display: flex;}  
+
+#title{margin-top: 50px;
+       margin-left: 0px;
+       animation-name: dis;
+       animation-duration: 7s;
+       animation-timing-function: cubic-bezier(0.9, 0, 1, 0.1);}
+
+#titler{margin-top: 50px;
+        margin-left: 0px;}
+
+#title::after{content: "Smarter note-taking starts here.";
+              animation-name: i;
+              animation-duration: 10s; 
+              animation-name: title;
+              animation-duration: 20s;
+              animation-iteration-count: infinite;}
+
+#titler::after{content: "Smarter note-taking starts here.";
+               animation-name: title;
+               animation-duration: 20s;
+               animation-iteration-count: infinite;}
+
+#site #active{border-bottom: 2px solid;
+              transition: font-size 0.7s;
+              padding: 2px;}
+
+#site a{transition: font-size 0.3s;
+        }
+#site a:hover{font-size: 23px;
+              text-shadow: 0px 0px 30px white; }
+
+#siter #active{border-bottom: 2px solid;
+              transition: font-size 0.7s;
+              padding: 2px;}
+
+#siter a{transition: font-size 0.3s;
+        }
+#siter a:hover{font-size: 23px;
+              text-shadow: 0px 0px 30px white; }
+
+@keyframes title{
+     10%{content: "No more messy notes.";}
+     20%{content: "Write notes instantly.";}
+     30%{content: "Organize everything easily.";}
+     40%{content: "Your AI study partner.";}
+     50%{content: "Notes anytime, anywhere.";}
+     60%{content: "Projects made simple.";}
+     70%{content: "Study smarter today.";}
+     80%{content: "Focus. Learn. Succeed.";}
+     90%{content: "All notes. One place.";}
+     100%{content: "Smarter note-taking starts here.";}
+
+}
+
+@keyframes imgpop{
+
+0%{
+transform: translate(150px, 320px) scale(4);
+box-shadow: 0px 0px 10px;
+}
+
+60%{
+transform: translate(150px, 320px) scale(4);
+box-shadow: 0px 0px 10px;
+}
+
+100%{
+transform: translate(0px, 0px) scale(1);
+box-shadow: none;
+}
+
+}
+
+@keyframes dis{
+     from{opacity: 0;}
+}

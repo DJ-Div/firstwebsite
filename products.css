@@ -1,0 +1,71 @@
+body{padding: 0;
+     margin: 0; }
+
+#first img{float: left;
+           align-self: center;
+}
+
+#two img{align-self: center;
+         justify-self: right;}
+
+#two{flex-direction: row-reverse;
+     animation-name: two; 
+     animation-duration: 5s;}
+#first{animation-name: first;
+       animation-duration: 5s;}
+
+#prd{display: flex;
+     justify-content: center; 
+     flex-wrap: wrap;}
+
+#first h2{align-items: flex-start;}
+
+.prd{
+background-color: rgb(10, 10, 10);
+display: flex;
+height: auto;
+margin: 15px;
+padding-bottom: 30px;
+width: 500px;
+background: rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:15px;
+padding:30px;
+transition:0.3s;
+}
+
+#a{text-decoration: none;
+   font-weight: bold;
+   background: linear-gradient(45deg, rgb(8, 219, 235), rgb(15, 36, 221), rgb(134, 7, 103));
+   color: white; 
+   padding: 10px; 
+   border-radius: 1000px; 
+   margin: 40px;
+   overflow-wrap: break-word;
+   box-sizing: border-box;
+   transition: font-size 0.3s;}
+
+#a:hover{font-size: large;
+         box-shadow: -10px 10px 50px rgba(1, 74, 148, 0.493), 10px -10px 50px rgba(111, 2, 236, 0.507);}
+   
+.prd:hover
+{
+transform: translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+border-color:rgba(0,170,255,0.5);
+}
+
+.prd h2{text-shadow: 0px 0px 10px;}
+
+#footer{text-align: left;
+        margin-top: auto;
+        background-color: rgb(26, 25, 25);
+        padding: 10px;
+        margin-bottom: 0;}
+
+@keyframes first{
+   from{transform: translateX(-1000px);}
+}
+@keyframes two{
+   from{transform: translateX(1000px);}
+}
