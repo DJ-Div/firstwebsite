@@ -1,0 +1,150 @@
+body{background-color: black;
+     color: white;
+     font-family: "Montserrat";
+     text-align: center;
+    background-image:url(e8464f60-f9c0-4e7f-96b3-9ad284f5cefd.png);
+    background-size:cover;
+    background-position:center;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#fuck{color: white;
+     display: flex;
+     justify-content: center;
+     font-family: "Montserrat";
+     font-weight: 700;}
+
+#imgr{width: 80px;
+      height: 80px;
+      margin-top: 22px;
+      margin-right: 40px;
+      margin-left: 40px;
+      align-self: center;
+      float: left;}
+
+#site{font-size: 16px;
+      font-family: "Montserrat";
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 25px;}
+
+#siter{font-size: 16px;
+       font-family: "Montserrat";
+       font-weight: 700;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       min-height: 25px;
+       width: 100%;}
+
+#site h2{color: white;
+         margin-left: 20px;
+         margin-right: 20px;}
+#site a{text-decoration: none;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;}
+
+#siter h2{color: white;
+         margin-left: 20px;
+         margin-right: 20px;}
+#siter a{text-decoration: none;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;}
+
+#corupt{border: 2px solid;}
+
+::-webkit-scrollbar{visibility: hidden;}
+
+.img{width: 80px;
+     height: 80px;
+     margin-top: 22px;
+     margin-right: 40px;
+     margin-left: 40px;
+     align-self: center;
+     float: left;}
+
+header{width: 480px;
+       display: flex;}  
+
+#titler{margin-top: 50px;
+        margin-left: 0px;}
+
+#title::after{content: "Smarter note-taking starts here.";
+              animation-name: title;
+              animation-duration: 20s;
+              animation-iteration-count: infinite;}
+
+#titler::after{content: "Smarter note-taking starts here.";
+               animation-name: title;
+               animation-duration: 20s;
+               animation-iteration-count: infinite;}
+
+#site #active{border-bottom: 2px solid;
+              transition: font-size 0.7s;
+              padding: 2px;}
+
+#site a{transition: font-size 0.3s;
+        }
+#site a:hover{font-size: 23px;
+              text-shadow: 0px 0px 30px white; }
+
+#siter #active{border-bottom: 2px solid;
+              transition: font-size 0.7s;
+              padding: 2px;}
+
+#siter a{transition: font-size 0.3s;
+}
+
+#title{margin-top: 50px;
+        margin-left: 0px;}
+
+footer{text-align: left;
+        margin-top: 15px;
+        background-color: rgb(26, 25, 25);
+        padding: 10px;
+        margin-bottom: 0;
+        margin-bottom: 0;}
+
+#siter a:hover{font-size: 23px;
+              text-shadow: 0px 0px 30px white; }
+
+@keyframes title{
+     10%{content: "No more messy notes.";}
+     20%{content: "Write notes instantly.";}
+     30%{content: "Organize everything easily.";}
+     40%{content: "Your AI study partner.";}
+     50%{content: "Notes anytime, anywhere.";}
+     60%{content: "Projects made simple.";}
+     70%{content: "Study smarter today.";}
+     80%{content: "Focus. Learn. Succeed.";}
+     90%{content: "All notes. One place.";}
+     100%{content: "Smarter note-taking starts here.";}
+
+}
+
+@keyframes dis{
+     from{opacity: 0;}
+}
+
+@view-transition{navigation:auto;
+}
+
+@keyframes up {
+    from{transform: translate(0);}
+    to{transform: translate(100%);}
+}
+
+@keyframes down {
+    from{transform: translate(0);}
+    to{transform: translate(-100%);}
+}

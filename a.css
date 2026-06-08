@@ -1,0 +1,104 @@
+html, body{padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;}
+
+hr { width: 100%; }
+
+#mdiv{border: 2px solid;
+      box-shadow: none;
+      transition: box-shadow 0.3s;}
+#mdiv:hover{box-shadow: 0px 0px 40px rgb(0, 51, 192);}
+
+.first{
+animation-name: stepappear;
+animation-duration: 3s;
+animation-timing-function: cubic-bezier(0.9,0,1,0.1);
+}
+
+.two{
+animation-name: stepappear;
+animation-duration: 5s;
+animation-timing-function: cubic-bezier(0.9,0,1,0.1);
+}
+
+.three{
+animation-name: stepappear;
+animation-duration: 7s;
+animation-timing-function: cubic-bezier(0.9,0,1,0.1);
+}
+
+.four{
+animation-name: stepappear;
+animation-duration: 9s;
+animation-timing-function: cubic-bezier(0.9,0,1,0.1);
+}
+
+#c div{display: inline-block;
+       width: 300px; 
+       background-color: rgb(10, 10, 10);
+       border-radius: 10px; 
+       margin: 15px; 
+       margin-top: 10px; }
+
+#c{display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 11px;}
+
+#mh3{font-size: x-large;
+     display: inline-block;
+     margin-bottom: 0;}
+
+#mh4{font-weight: 200;}
+
+.sec{margin-bottom: -2px;}
+.sec::before{content: "✔ ";}
+
+#lm{text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(0, 51, 192);
+    padding: 10px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 15px;}
+
+.two #lm{margin-top: 15px;
+         margin-bottom: 0;}
+
+.waw{margin: 5px;}
+.three #mh3{margin-top: 19px;}
+.four #mh3{margin-top: 19px;}
+.four #lm{margin-top: 6px;}
+.four{margin-bottom: 40px;}
+
+#a{margin-top: 40px;
+    width: auto;}
+
+#footer{
+        text-align: left;
+        margin-top: auto;
+        background-color: rgb(26, 25, 25);
+        padding: 10px;
+        margin-bottom: 0;}
+
+#a{text-decoration: none;
+   font-weight: bold;
+   background: linear-gradient(45deg, rgb(8, 219, 235), rgb(15, 36, 221), rgb(134, 7, 103));
+   color: white; 
+   padding: 10px; 
+   border-radius: 1000px; 
+   margin: 40px;
+   transition: font-size 0.3s; }
+
+#a:hover{font-size: large;
+         box-shadow: -10px 10px 50px rgba(1, 74, 148, 0.493), 10px -10px 50px rgba(111, 2, 236, 0.507);}
+
+
+@keyframes stepappear{
+    from{opacity: 0;}
+}

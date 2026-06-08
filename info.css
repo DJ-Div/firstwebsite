@@ -1,0 +1,174 @@
+body{margin: 0;
+     padding: 0;
+     display: flex;
+     height: 100vh;
+     background-image: none;}
+
+#img{background-image: url(ChatGPT\ Image\ Apr\ 25\,\ 2026\,\ 05_11_30\ AM.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+    height: 100.5vh;
+    width: 40vw;}
+
+#main{flex: 1;}
+
+.input:hover{border: 0.5px solid rgba(255, 255, 255, 0.692);}
+
+.input:focus {
+  border: 0.5px solid transparent;
+  border-radius: 7px;
+
+  background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(
+      45deg,
+      rgb(8,219,235),
+      rgb(15,36,221),
+      rgb(134,7,103)
+    ) border-box;
+}
+
+#or {
+    width: 800px;
+    margin: 0.5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#or::before,
+#or::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgb(44, 43, 43);
+}
+
+#or span {
+    margin: 0 10px;
+    font-weight: 800;
+    color: rgb(44, 43, 43);
+}
+
+.input:not(:placeholder-shown){background-color: white;
+                               color: rgb(44, 43, 43); }
+
+.input {
+  display: block;   /* ensures clean stacking inside wrapper */
+}
+
+.app img:hover{width: 35px;
+               height: 35px; 
+              box-shadow: -20px 20px 50px rgba(0, 93, 187, 0.493), 10px -10px 50px rgba(129, 19, 255, 0.507);}
+
+.app img{width: 30px;
+         height: 30px; 
+         background-color: rgb(255, 255, 255); 
+         border-radius: 20px;
+         padding: 10px; 
+         transition: width 0.3s, height 0.3s; }
+
+#apps{display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: auto;
+      gap: 100px;}
+
+#collect {
+  text-align: left;
+  display: inline-block;
+}
+
+h5{color: rgb(44, 43, 43);}
+
+#submit{text-decoration: none;
+        font-weight: bold;
+        background: white;
+        color: rgb(0, 0, 0); 
+        padding: 13px; 
+        border-radius: 15px; 
+        margin-top: 0;
+        margin-bottom: 20px;
+        transition: font-size 0.3s;
+        border: none;}
+
+#submit:hover{font-size: large;
+              box-shadow: -20px 20px 50px rgba(0, 93, 187, 0.493), 10px -10px 50px rgba(129, 19, 255, 0.507);}
+
+.input::placeholder{font-family: "Montserrat";
+                   color: rgb(44, 43, 43); 
+                   font-weight: 700; }
+
+#t{
+   font-size: 15px; }
+
+.input{
+       border-radius: 7px;
+       margin-top: 15px;
+       background-color: black;  
+       border: 0.5px solid rgb(44, 43, 43); 
+       border-left: 0.5px solid transparent;
+       border-right: 0.5px solid transparent;
+       font-family: "Montserrat";
+       color: rgb(44, 43, 43); 
+       font-weight: 700; 
+       height: 20px; 
+       width: 600px;
+       outline: none;
+       color: white; 
+       padding: 10px; 
+       transition: border 0.3s; }
+
+#logo{background-image: url(icon-512.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 10px; 
+      height: 80px;  
+      width: 80px;}
+
+#quotes::after {
+  white-space: pre-line;
+  content: "Education is the most powerful weapon which you can use to change the world.\A — Nelson Mandela";
+  animation: quotes 40s infinite;
+  font-family: "Cinzel";
+  font-weight: 100;
+}
+
+@keyframes quotes {
+  0% {
+    content: "Education is the most powerful weapon which you can use to change the world.\A — Nelson Mandela";
+  }
+  10% {
+    content: "Live as if you were to die tomorrow. Learn as if you were to live forever.\A — Mahatma Gandhi";
+  }
+  20% {
+    content: "An investment in knowledge pays the best interest.\A — Benjamin Franklin";
+  }
+  30% {
+    content: "The roots of education are bitter, but the fruit is sweet.\A — Aristotle";
+  }
+  40% {
+    content: "Education is not the filling of a pail, but the lighting of a fire.\A — W.B. Yeats";
+  }
+  50% {
+    content: "Tell me and I forget. Teach me and I remember. Involve me and I learn.\A — Benjamin Franklin";
+  }
+  60% {
+    content: "The beautiful thing about learning is that no one can take it away from you.\A — B.B. King";
+  }
+  70% {
+    content: "Develop a passion for learning. If you do, you will never cease to grow.\A — Anthony J. D'Angelo";
+  }
+  80% {
+    content: "Education is what remains after one has forgotten what one has learned in school.\A — Albert Einstein";
+  }
+  90% {
+    content: "The mind is not a vessel to be filled but a fire to be kindled.\A — Plutarch";
+  }
+  100% {
+    content: "Education is the most powerful weapon which you can use to change the world.\A — Nelson Mandela";
+  }
+}

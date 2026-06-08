@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+
+#testDiv{
+    width: 400px;
+    background-color: aqua;
+    opacity: 0;
+    display: none;
+    transition: all 1s ease;
+}

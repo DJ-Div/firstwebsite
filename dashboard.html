@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jacquard+24&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="head"><h1>Dashboard </h1> <h4> Your notes writing companion</h4></div>
+    <img id="img" src="icon-512.png" alt="">
+    <div id="test" class="container">
+        <h3>Information Tab</h3>
+        <p>Please fill the details below</p>
+        <div id="default">
+            <div class="row">
+                <h4 class="y">Full Name</h4>
+                <h4 class="t-f" id="fn"></h4>
+            </div>
+            <div class="row">
+                <h4 class="y">Email</h4>
+                <h4 class="t-f" id="e"></h4>
+            </div>
+            <div class="row">
+                <h4 class="y">Password</h4>
+                <h4 class="t-f" id="p"></h4>
+            </div>
+            <div class="row">
+                <h4 class="y">Location</h4>
+                <h4 class="t-f" id="l"></h4>
+            </div>
+            <div class="row">
+                <h4 class="y">School/College</h4>
+                <h4 class="t-f" id="scb"></h4>
+            </div>
+            <div class="row">
+                <h4 class="y">Grade + Stream</h4>
+                <h4 class="t-f" id="gs"></h4>
+            </div>
+            <hr id="defhr">
+            <div id="progress-container" class="row">
+                <div id="progress-bar"></div>
+            </div>
+
+            <h3 id="progress-text" class="row">0% Complete</h3>
+        </div>
+        <form action="" id="form1">
+            <label for="name">Full Name</label><br>
+            <div class="input">
+                <i class="fa-solid fa-user icons"></i>
+                <input class="field" id="fn" type="text" placeholder="Enter Your Full Name">
+            </div>
+            <label for="email">Email</label>
+            <div class="input">
+                <i class="fa-solid fa-envelope icons"></i>
+                <input class="field" id="e" type="email" placeholder="Enter your email address">
+            </div>
+            <label for="pass">Password</label>
+            <div class="input">
+                <i class="fa-solid fa-key icons"></i>
+                <input class="field" id="p" type="password" placeholder="Enter your password">
+            </div>
+            <label for="address">Location</label>
+            <div class="input">
+                <i class="fa-solid fa-location-dot icons"></i>
+                <input class="field" id="l" type="text" placeholder="Building-Lane-Area-City-State-Country">
+            </div>
+            <label for="s/c">School/College + Board</label>
+            <div class="input">
+                <i class="fa-solid fa-school icons"></i>
+                <input class="field" id="scb" type="text" placeholder="School/College-Board">
+            </div>
+            <label for="g/s">Grade + Stream</label>
+            <div class="input">
+                <i class="fa-solid fa-chalkboard icons"></i>
+                <input class="field" id="gs" type="text" placeholder="Grade-Stream">
+            </div>
+            <button id="fs">Submit</button>
+        </form>
+    </div>
+    <div id="dataTransfer" class="container">
+        <h3>Services</h3>
+        <p>Choose the service which suits your requirements the best</p><br>
+        <div id="iconSet">
+            <div class="method">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h4>Customised Notes</h4>
+            </div>
+            <div class="method">
+                <i class="fa-solid fa-file-pen"></i>
+                <h4>Revision Notes</h4>
+            </div>
+            <div class="method">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h4>Lecture Summaries</h4>
+            </div>
+            <div class="method">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h4>Projects</h4>
+            </div>
+        </div>
+        <div id="productsOrder">
+            <div class="product">
+                <h4>Customised Notes <p>Customised Notes are personalized study materials created according to a student’s subject, syllabus, academic level, and learning requirements to make studying simpler, faster, and more effective.</p></h4>
+                <div class="otherContents">
+                    <img src="1.png" alt="">
+                    <button class="bn">Buy Now</button>
+                </div>
+            </div>
+             <div class="product">
+                <h4>Revision Notes <p>Revision Notes are short and focused study materials designed to help students quickly review important concepts, formulas, definitions, and key points before exams or tests.</p></h4>
+                <div class="otherContents">
+                    <img src="2.png" alt="">
+                    <button class="bn">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <h4>Lecture Summaries <p>Lecture Summaries are organized written summaries created from classroom lectures, discussions, or recordings to help students revise and understand lessons more efficiently.</p></h4>
+                <div class="otherContents">
+                    <img src="3.png" alt="">
+                    <button class="bn">Buy Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <h4>Projects <p>Projects are visually designed academic notes created using customized layouts, diagrams, colors, illustrations, and structured formatting to make learning more engaging, organized, and easy to understand.</p></h4>
+                <div class="otherContents">
+                    <img src="3.png" alt="">
+                    <button class="bn">Buy Now</button>
+                </div>
+            </div>
+            <button class="back">Back</button>
+        </div>
+    </div>
+    <div id="transferData">
+        <h3>Upload Files</h3>
+        <p>Send any form raw data to be worked on.</p>
+        <div id="imgHolder">
+            <i class="fa-solid fa-file-pdf icons" id="pdf"></i>
+            <i class="fa-solid fa-file-zipper icons" id="zip"></i>
+            <i class="fa-solid fa-file-image icons" id="png"></i>
+            <i class="fa-solid fa-image icons" id="jpg"></i>
+            <i class="fa-solid fa-folder icons" id="doc"></i>
+        </div>
+        <div id="uploadSection">
+            <div id="fileDrop">
+                <input
+                    type="file"
+                    id="fileId"
+
+                    accept="
+                    .pdf,
+                    .txt,
+                    .png,
+                    .jpg,
+                    .jpeg,
+                    .docx
+                    "
+                >
+                <div id="centeredText">
+                    Upload your files here
+                </div>
+            </div>
+            <button class="back2">Back</button>
+        </div>
+    </div>
+    <div id="aiAgent">
+        <h3>AI Agent</h3>
+        <p>AI agent to clear all your queries</p>
+    </div>
+    <div id="trackOrders">
+        <h3>Track your Activities</h3>
+        <p>Track your orders and related data at one place</p>
+        <div id="parentActivity">
+            <div class="userOrder">
+                <h1 class="counter">0</h1>
+                <h4>Number of Orders</h4>
+            </div>
+            <div id="attributes">
+                <div class="activity">
+                    <h2 class="no">0</h2>
+                    <h2>Active</h2>
+                </div>
+                <div class="activity">
+                    <h2 class="no">0</h2>
+                    <h2>Pending</h2>
+                </div>
+                <div class="activity">
+                    <h2 class="no">0</h2>
+                    <h2>Completed</h2>
+                </div>
+            </div>
+            <div id="uploadedFiles">
+                <h2>Files Uploaded:</h2>
+                <h4 id="fileName"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/0dad9a7c55.js" crossorigin="anonymous"></script>
+</body>
+</html>

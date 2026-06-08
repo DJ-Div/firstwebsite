@@ -1,0 +1,450 @@
+#img{position: absolute;
+    top: 10px;
+    right: 30px;
+    height: 70px;
+}
+
+h1{display: inline;
+   word-spacing: 10px; 
+   letter-spacing: 1px; 
+}
+
+h4{display: inline;
+   margin-bottom: 4px; 
+}
+
+.product h4{
+    margin-bottom: 0;
+}
+
+.product img{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+
+.otherContents{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otherContents button{
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, rgb(8, 219, 235), rgb(15, 36, 221), rgb(134, 7, 103));
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 5px;
+    transition: font-size 0.3s, box-shadow 0.3s;
+}
+
+#transferData{
+    width: 700px;
+    background-color: #ffffff0e;
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 0.5px solid rgb(80, 80, 80);
+      border-radius: 20px;
+      height: 128px;
+      position: fixed;
+      top: 44vh;
+      left: 45vh;
+      transform: translate() scale(1);
+      transition: all 1s ease;
+}
+
+#transferData img{
+    height: 100px;
+}
+
+#imgHolder{
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    gap: 70px;
+    transition: opacity 0.5s ease;
+}
+
+#fileDrop{
+    position: relative;
+
+    width: 95%;
+    height: 70px;
+
+    border-radius: 10px;
+    border: 3px dashed rgba(140, 120, 255, 0.35);;
+    transition: border-color 0.5s ease;
+    margin-top: 10px;
+
+    background-color: transparent;
+}
+
+#centeredText{
+    position: absolute;
+    color: rgba(200, 200, 255, 0.7);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: color 0.5s ease;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    pointer-events: none;
+}
+
+#uploadSection{
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+#fileId{
+    background-color: transparent;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#fileDrop:hover{
+    border-color: #9d7bff;
+}
+
+#fileDrop:hover #centeredText{
+    color: #ffffff;
+}
+
+#fileId::file-selector-button{
+    display: none;
+}
+
+#aiAgent{
+    width: 285px;
+    background-color: #ffffff0e;
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 0.5px solid rgb(80, 80, 80);
+      border-radius: 20px;
+      height: 82vh;
+      position: fixed;
+      bottom: 2.3vh;
+      right: 1.5vw;
+      transform: translate() scale(1);
+      transition: all 1s ease;
+}
+
+#trackOrders{
+    width: 72.5vw;
+    background-color: #ffffff0e;
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 0.5px solid rgb(80, 80, 80);
+      border-radius: 20px;
+      height: 240px;
+      position: fixed;
+      bottom: 2.3vh;
+      left: 1.5vw;
+      transform: translate() scale(1);
+      transition: all 1s ease;
+}
+
+.otherContents button:hover{
+    font-size: 12px;
+    box-shadow: -10px 10px 50px rgba(1, 74, 148, 0.493), 10px -10px 50px rgba(111, 2, 236, 0.507);
+}
+
+#head{text-align: justify;
+    left: 1vw;
+    top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 15px;}
+
+#head, img{transition: opacity 0.5s ease;}
+
+#productsOrder .product{
+    width: 250px;
+}
+
+.back{
+    background-color: transparent;
+    font-weight: 700;
+    color: #24242B;
+    border: none;
+    position: absolute;
+    bottom: 1px;
+    left: 46.5%;
+}
+
+.back2{
+    background-color: transparent;
+    font-weight: 700;
+    color: #24242B;
+    border: none;
+    position: absolute;
+    bottom: 1px;
+    left: 46.5%;
+}
+
+#productsOrder{
+    display: none;
+    flex-direction: row;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 10px;
+
+    scroll-behavior: smooth;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+
+    flex-shrink: 0;
+
+    padding: 10px;
+    border-left: 1px solid #24242B;
+    border-right: 1px solid #24242B;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+#defhr{width: 100%;
+       background-color: rgb(255, 255, 255);
+       margin-bottom: 15px; 
+       border-color: rgb(255, 255, 255); }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    margin-top: 25px;
+}
+
+#parentActivity{
+    display: flex;
+    color: #825dfe;
+    height: 80%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.userOrder{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.userOrder *{
+    margin: 0;
+    padding: 0;
+}
+
+.counter{
+    font-size: 100px;
+}
+
+#attributes{
+    padding: 0;
+    margin: 0;
+}
+
+#attributes *{
+    margin: 2px;
+}
+
+.input{background-color: #24242B;
+       display: flex;
+       margin-top: 3px;
+       margin-bottom: 6px;
+       padding: 3px;
+       border-radius: 5px;
+       align-items: center;}
+
+.icons{
+    color: #825dfe;
+    height: 10px;
+}
+#pdf{
+    font-size: 50px;
+    height: 100px;
+}
+#zip{
+    font-size: 35px;
+    height: 100px;
+}
+#png{
+    font-size: 35px;
+    height: 100px;
+}
+#jpg{
+    font-size: 45px;
+    height: 100px;
+}
+#doc{
+    font-size: 55px;
+    height: 100px;
+}
+
+#test{background-color: #ffffff0e;
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 0.5px solid rgb(80, 80, 80);
+      border-radius: 20px;
+      height: 380px;
+      width: 300px;
+      position: fixed;
+      left: 1.5vw;
+      top: 10vh;
+      transform: scale(1), translate();
+      transition: all 1s ease;}
+
+p{font-size: 7px;
+  margin: 0;  
+  color: #A1A1AA;}
+
+h3{margin: 0;}
+
+.row{display: flex;
+     justify-content:space-between;
+     margin: 0;}
+
+#default{opacity: 1;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         transition: opacity 0.5s ease;}
+
+#fs{width: 100%;
+       font-weight: 700; 
+       color: white;
+       border: none;
+       border-radius: 100px;
+       margin-top: 20px;
+       background: linear-gradient(45deg, rgb(8, 219, 235), rgb(15, 36, 221), rgb(134, 7, 103)); }
+
+input::placeholder{font-size: 7px;
+                   color: #A1A1AA;}
+
+label{font-size: 7px;}
+
+.method{
+    font-size: 60px;
+    margin-top: 17px;
+    display: block;
+    color: #825dfe;
+}
+
+.method h4{
+    font-size: medium;
+    display: block;
+}
+
+#iconSet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    transition: opacity 0.5s ease;
+}
+
+#dataTransfer{
+    width: 700px;
+    background-color: #ffffff0e;
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      border: 0.5px solid rgb(80, 80, 80);
+      border-radius: 20px;
+      height: 210px;
+      position: fixed;
+      top: 10vh;
+      left: 45vh;
+      transform: translate() scale(1);
+      transition: all 1s ease;
+}
+
+input:not(:placeholder-shown){
+    background-color: rgb(220, 229, 239);
+}
+
+#form1{text-align: left;
+     opacity: 0;
+     transition: opacity 0.5s ease;
+     display: none;}
+
+input{height: 15px;
+      border-radius: 5px;
+      background-color: #24242B;
+      font-size: 7px;
+      width: 100%;
+      margin-left: 4px;
+      border: none;}
+
+#progress-container{
+    width:100%;
+    opacity: 1;
+    height:12px;
+    background:rgba(255,255,255,0.15);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+    transition: opacity 0.5s ease;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    opacity: 1;
+    background:linear-gradient(45deg, rgb(8, 219, 235), rgb(15, 36, 221), rgb(134, 7, 103));
+    transition:0.4s ease;
+    border-radius:20px;
+    transition: opacity 0.5s ease;
+}
+
+#progress-text{
+    margin-bottom:20px;
+    font-family:Montserrat;
+    font-size:14px;
+    opacity: 1;
+    color:white;
+    transition: opacity 0.5s ease;
+}

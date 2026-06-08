@@ -1,0 +1,85 @@
+body{background-image: url(ChatGPT\ Image\ May\ 8\,\ 2026\,\ 12_07_52\ AM.png);
+     background-position: center;
+     background-clip: border-box;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     flex-direction: column;
+     display: flex;
+     color: white;
+     opacity: 100%;}
+
+#t{backdrop-filter: blur(8px);
+   background-color: rgba(255, 255, 255, 0.027); 
+   padding: 30px; 
+   border-radius: 30px; 
+   backdrop-filter: blur(6px);
+   border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+input{
+       border-radius: 7px;
+       margin-top: 15px;
+       background-color: black;  
+       border: 0.5px solid rgb(44, 43, 43); 
+       border-left: 0.5px solid transparent;
+       border-right: 0.5px solid transparent;
+       font-family: "Montserrat";
+       color: rgb(44, 43, 43); 
+       font-weight: 700; 
+       height: 20px; 
+       width: 300px;
+       outline: none;
+       color: white; 
+       padding: 10px; 
+       transition: border 0.3s; }
+
+h5{color: white;
+   font-weight: 800;}
+
+a{color: cyan;}
+
+h3::after{content: attr(text-new);}
+h3{background-color: attr(color-red);
+   border-radius: 5px;}
+
+
+button:hover{font-size: large;
+              box-shadow: -20px 20px 50px rgba(0, 93, 187, 0.493), 10px -10px 50px rgba(129, 19, 255, 0.507);}
+
+button{text-decoration: none;
+        font-weight: bold;
+        background: white;
+        color: rgb(0, 0, 0); 
+        padding: 13px; 
+        border-radius: 15px; 
+        margin-top: 0;
+        margin-bottom: 20px;
+        transition: font-size 0.3s;
+        border: none;}
+
+input:focus {
+  border: 0.5px solid transparent;
+  border-radius: 7px;
+
+  background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(
+      45deg,
+      rgb(8,219,235),
+      rgb(15,36,221),
+      rgb(134,7,103)
+    ) border-box;
+}
+
+input::placeholder{font-family: "Montserrat";
+                   color: rgb(44, 43, 43); 
+                   font-weight: 700; }
+
+input:hover:not(:focus){border: 0.5px solid rgba(255, 255, 255, 0.692);}
+
+input:not(:placeholder-shown){background-color: white;
+                               color: rgb(44, 43, 43); }
